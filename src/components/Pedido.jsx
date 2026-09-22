@@ -109,6 +109,11 @@ const Pedido = () => {
                         <button onClick={ConfirmarPedido}>
                             {enviar ? "Enviando" : "Confirmar Pedido"}
                         </button>
+                        {status && (
+                            <div>
+                                <strong>Alerta:</strong>{status}
+                            </div>
+                        )}
                     </ul>
                 )}
 
